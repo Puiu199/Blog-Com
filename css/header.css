@@ -1,0 +1,142 @@
+/*Stile for header and add style text*/
+header
+{
+    display: grid;
+    font-family: 'Sen', sans-serif;
+}
+/* Stile for navigate bar*/
+.navbar
+{
+    width: 100%;
+    height: 80px;
+    background-color:#232536 ;
+    display: flex;
+    justify-content: space-between;
+}
+/*Remoge style for all links => list*/
+.list>a
+{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+/*Style for meniu in the top-right */
+.list
+{   box-sizing: border-box;
+    padding: 2px;
+    border:none;
+    width: 530px;
+    height: 100%;
+    text-decoration: none;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 80px;
+    
+}
+/*Style for button subscribe*/
+.btn_subscribe
+{
+    border: none;
+    color: #232536;
+    width:180px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+}
+/*Style and space for logo */
+.logo
+{
+    background-image:url(/img/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:100%;
+    width: 200px;
+    border: none;  
+    margin-left: 80px;
+}
+/*Style for big image under navbar*/
+.bilbor
+{
+    box-sizing: border-box;
+
+    border:none;
+    height: 680px;    
+    background-repeat: no-repeat;
+    display: grid !important;
+    align-items: center;
+}
+.one
+{
+    background-image: url(../img/man-in-black.png);
+}
+
+.two
+{
+    background-image: url(../img/tow.png);
+    color: #f4f0f8 !important;
+}
+.three
+{
+    background-image: url(../img/three.png);
+    background-color: #f4f0f8;
+}
+.owl-nav
+{
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    z-index: 12;
+    top: -350px !important;
+}
+
+/*Style space for  text on bilbors*/
+.text
+{ 
+    opacity: 1;
+   
+    display: grid;
+    justify-items: start;
+    width: 90%;
+    height: 450px;
+    border: none;
+    color: #232536;
+    font-weight: 400;
+    font-size: 16px;
+    position: relative; 
+    margin-left: 80px;
+    align-content:stretch;
+}
+/*style for label and align about*/ 
+.ab
+{
+    width: 45%;
+    text-align: justify;   
+}
+/*Style for color a sectiono word in yeelow*/
+label>span
+{
+    color: #FFD050;
+}
+/*Style for text title */
+.titlu
+{   
+    width: 75%;
+    border: none;
+    font-size: 64px;
+    line-height: 1;
+    font-family: 'Sen', sans-serif;
+}
+/*Style for buttcon read more bgcolor=Yeelow*/
+.read_more
+{
+    width: 200px;
+    height: 60px;
+    background-color:#FFD050 ;
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    border: none;    
+}
+

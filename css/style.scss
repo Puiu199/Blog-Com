@@ -1,0 +1,255 @@
+
+body 
+{
+background-color: white;
+padding: 0px;
+margin: 0px;
+}
+@mixin post($sb)
+{   
+    border-color: grey;    
+    border-style: solid;
+    border-width: $sb;
+    height: 700px;
+    overflow: hidden;
+    display: grid; 
+    align-items: center;  
+    justify-items: center;
+    align-content: space-around;
+    box-sizing: border-box;
+    padding: 0px;
+    margin-bottom: 80px;
+}
+.info_post
+{
+    width: 94%;
+    height: 320px;
+    position: relative;
+    display: grid;
+    justify-content: space-between;
+    border: none;
+}
+.featured_post
+{
+    @include post(1px);
+    font-family: 'Sen', sans-serif;
+}
+.img_f_Post
+{
+    margin: 0px;
+    width:600px;   
+    height:320px; 
+    border: none;
+    background-image: url(/img/img_f_Post.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+.all_post
+{
+    @include post(0px);
+}
+.title_allpost
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.elem_allpost
+{
+    height: 180px;
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    padding: 15px;
+    padding-right: 35%;
+    font-family: 'Sen', sans-serif;
+    cursor: pointer;
+}
+.elem_allpost>h3
+{
+    font-weight: 700;
+}
+.elem_allpost:hover
+{
+    background-color:#FBF6EA ;
+}
+.mision
+{
+    width: 100%;
+    height: 500px; 
+    background-color:#F4F0F8 ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;margin-bottom: 80px;
+}
+%elem_mision
+{
+    border: none;
+    width: 500px;
+    height: 300px;
+    background-color: transparent;
+    display: grid;
+    box-sizing: border-box;
+    align-content: space-evenly;
+    overflow: hidden;
+    
+}
+.ABOUT_US
+{
+    @extend %elem_mision;
+}
+.Our_mision
+{
+    @extend %elem_mision;
+}
+@mixin line($wl,$bgl)
+{   
+    display: block;
+    width:$wl;
+    background-color:$bgl;
+    height: 20px;
+    border: none;
+}
+.line
+{
+    display: flex;
+}
+.f1w
+{
+    @include line(20%,white);
+}
+.s2y
+{
+    @include line(60%,#FFD050);
+}
+.f3v
+{
+    @include line(20%,#592EA9);
+}
+@mixin category($wthc,$ji)
+{
+    height: $wthc;
+    border: 1px solid #6D6E76;
+    align-content: center;
+    display: grid;
+    justify-items: $ji;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.choosecategory
+{
+    @include category(250px, start)
+}
+.choosecategory>h2
+{
+    font-weight: bold;
+}
+.lmediugrey
+{
+    width: 90%;
+    color: #6D6E76;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.poster
+{
+    display: flex;
+    height:600px;
+    background-image: url(../img/children.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    border: none;
+    justify-content: flex-end;
+    align-items: flex-end;
+     
+}
+.whywestrat
+{
+    border: none;
+    width: 700px;
+    height: 450px;
+    display: block;
+    background-color: white;
+    padding: 50px;
+    box-sizing: border-box;
+   
+   
+}
+.whywestrat>h6
+{
+    font-family:'Inter';
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.list_auth
+{
+    @include category(350px,center);
+    margin-bottom: 50px;
+    justify-content: space-around;
+    background-color:#F4F4F4 ;
+}
+.section_social_media
+{
+    border: none;
+    display: flex;
+    width: 70%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.list_auth:hover
+{
+    background-color:#FBF6EA ;
+}
+.logs
+{
+    height: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    border: 1px solid black;
+    margin-bottom: 100px;
+}
+.TESTIMONIALs
+{
+    background-color: #FBF6EA;
+    height: 460px;
+    border-right: 1px solid grey;
+    display: grid;
+    padding: 15px;
+    color:  black;
+    align-content: center;
+    padding-left: 75px;
+    margin: 0px;
+}
+.TESTIMONIALs>h1
+{
+    font-weight: bold;
+}
+.about_testimon
+{
+    background-color: #FBF6EA;
+    margin: 0px;
+    border: 1px solid violet;
+    height: 460px;
+    margin: 0px;
+}
+
+.join_now
+{
+    height: 260px;
+    align-content: space-between;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+.join_now>h1
+{
+    font-weight: bold;
+}
+.join_now>label
+{
+    color: #6D6E76;
+}
