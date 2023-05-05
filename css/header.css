@@ -139,4 +139,8 @@ label>span
     font-weight: 700;
     border: none;    
 }
+.read_more:hover
+{
+    box-shadow: 2px 2px 5px darkgray;
+}
 
