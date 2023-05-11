@@ -242,7 +242,7 @@ margin: 0px;
   {
     width: 50%;
     height: 75%;
-    border: 1px solid black;
+    border: none;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -252,11 +252,83 @@ margin: 0px;
     font-weight: bold;
   }
   
-.TESTIMONIALs>h1
+.author
 {
-    font-weight: bold;
+    margin: 5px;
+    width: 99%;
+    pad: 15px;
+    height: 100px;
+    border: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
-.about_testimon
+.author>span
+{
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    background-image:url(../img/Person1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+}
+.author>div:nth-child(2)
+{
+    border: none;   
+    display: grid;
+}
+.arrow
+{
+    width: 30%;
+    height: auto;
+    border: none;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+#left
+{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#right
+{
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: Black;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    color: white; 
+    cursor: pointer;
+}
+.author>div:nth-child(2)>label:first-child
+{
+font-size: 24px;
+font-weight: 700;    
+color: black;
+}
+.author>div:nth-child(2)>label:last-child
+{
+font-size: 16px;
+font-weight: 400;    
+color: grey;
+}
+out_testimon
 {
     background-color: #FBF6EA;
     margin: 0px;
@@ -264,7 +336,6 @@ margin: 0px;
     height: 460px;
     margin: 0px;
 }
-
 .join_now
 {
     height: 260px;
