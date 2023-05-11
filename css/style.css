@@ -217,13 +217,42 @@ body {
 .TESTIMONIALs {
   background-color: #FBF6EA;
   height: 460px;
-  border-right: 1px solid grey;
-  display: grid;
-  padding: 15px;
+  display: flex;
+  flex-wrap: nowrap;
+  padding-right: 25px;
   color: black;
-  align-content: center;
+  align-items: center;
+  justify-content: space-around;
   padding-left: 75px;
   margin: 0px;
+}
+
+.TESTIMONIALs > span {
+  display: block;
+  width: 0%;
+  height: 75%;
+  border: 1px solid grey;
+}
+
+.TESTIMONIALs > div:first-child {
+  width: 35%;
+  height: 75%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.TESTIMONIALs > div:last-child {
+  width: 50%;
+  height: 75%;
+  border: 1px solid black;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.TESTIMONIALs > h1 {
+  font-weight: bold;
 }
 
 .TESTIMONIALs > h1 {

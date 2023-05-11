@@ -12,18 +12,33 @@ footer
 }
 .sectionFooterMeniu
 {
+    
     height: 150px;
     display: flex;
-flex-wrap: nowrap;
-align-items: center;
-justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.footerMeniu
+{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 35%;
+    border: none;
+    justify-content: space-evenly;
+}
+.footerMeniu>a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
 }
 .spaceforSubscribe
 {
     background-color: #4C4C4C;
     width:auto;
-    height: 250px;    
-    
+    height: 250px;
     padding-right: 30px;
     padding-left: 30px;
     display: flex;
@@ -84,5 +99,4 @@ background-color: #4C4C4C;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
-
 }
